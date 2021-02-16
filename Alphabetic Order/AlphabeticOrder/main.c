@@ -19,11 +19,7 @@ struct OrderNode
 
 struct OrderNode* orderNodeTable[LENGTH] = { NULL };
 
-<<<<<<< HEAD
-/***** Declaration of Used Function Prototypes **********/
-=======
 /***** Declaration of used functions prototypes **********/
->>>>>>> 58c94339587f571d2d8eac2c1c08cd6f0cb3e860
 bool checkLetter(char letter);
 bool checkLowerCase(char letter);
 bool prepareAlphabeticOrder(char* alphabeticOrder, int length);
@@ -56,15 +52,12 @@ int main ()
     /* Parse the Input String into Alphabetic Order */
     result = parseInputToAlphabeticOrder(input, strlen(input));
 
-<<<<<<< HEAD
     if (result == -1)
     {
         printf("FUNC %s - Error occurred to parse input string!\n", __func__);
         return -1;
     }
 
-=======
->>>>>>> 58c94339587f571d2d8eac2c1c08cd6f0cb3e860
     /* Print the result into Alphabetic Order */
     printAlphabeticOrder();
 
@@ -142,14 +135,11 @@ int parseInputToAlphabeticOrder(char* input, int length)
     int index, position, result = 0;
     for(index = 0; index < length; index++)
     {
-<<<<<<< HEAD
         if (checkLetter(input[index]) == false)
         {
             printf("FUNC %s - Input string contains unexpected character!\n", __func__);
             return -1;
         }
-=======
->>>>>>> 58c94339587f571d2d8eac2c1c08cd6f0cb3e860
         position = 0;
         while(orderNodeTable[position] != NULL)
         {
