@@ -19,7 +19,7 @@ struct OrderNode
 
 struct OrderNode* orderNodeTable[LENGTH] = { NULL };
 
-/***** Declaration of used functions prototypes **********/
+/***** Declaration of Used Function Prototypes **********/
 bool checkLetter(char letter);
 bool checkLowerCase(char letter);
 bool prepareAlphabeticOrder(char* alphabeticOrder, int length);
