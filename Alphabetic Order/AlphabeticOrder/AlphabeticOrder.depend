@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1613471896 source:c:\users\soura\documents\github\c-projects\alphabetic order\alphabeticorder\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<ctype.h>
+
