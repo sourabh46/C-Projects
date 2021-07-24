@@ -1,0 +1,53 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C: gcc.exe native build",
+			"command": "C:\\TDM-GCC-64\\bin\\gcc.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"${fileDirname}\\utility.c",
+				"-o",
+				"${fileDirname}\\..\\build\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:\\TDM-GCC-64\\bin\\gcc.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C: gcc.exe UT build",
+			"command": "C:\\TDM-GCC-64\\bin\\gcc.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"${fileDirname}\\CuTest.c",
+				"${fileDirname}\\TestCuTest.c",
+				"${fileDirname}\\TestUtility.c",
+				"-o",
+				"${fileDirname}\\..\\build\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:\\TDM-GCC-64\\bin\\gcc.exe"
+		}
+	]
+}
